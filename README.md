@@ -36,11 +36,7 @@ AI_Powered_Customer_Onboarding_Agent/
 ├── .env                          # Environment variables (not included in the repo)
 ├── requirements.txt              # Project dependencies
 └── README.md                     # This file
-└── AI_Powered_Customer_Onboarding_Agent_api.postman_collection.json # Api Collection   
-
-
-AI_Powered_Customer_Onboarding_Agent_api.postman_collection.json
-
+└── AI_Powered_Customer_Onboarding_Agent_api.postman_collection.json # Api Collection
 
 ```
 
@@ -48,7 +44,7 @@ AI_Powered_Customer_Onboarding_Agent_api.postman_collection.json
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/AI_Powered_Customer_Onboarding_Agent.git
+   git clone https://github.com/arslan578/AI_Powered_Customer_Onboarding_Agent.git
    cd AI_Powered_Customer_Onboarding_Agent
    ```
 
@@ -68,6 +64,7 @@ AI_Powered_Customer_Onboarding_Agent_api.postman_collection.json
    ```bash
    SECRET_KEY="your_jwt_secret_key"
    SAAS_API_KEY="your_mock_saas_api_key"
+   SAAS_API_URL="server_url"
    ```
 
 ## Usage
@@ -79,6 +76,11 @@ AI_Powered_Customer_Onboarding_Agent_api.postman_collection.json
 
 2. **Access the API documentation:**
    Open your browser and navigate to [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) to interact with the API using Swagger.
+
+## Live Deployment
+
+- **Live server URL:** https://ai-powered-customer-onboarding-agent.onrender.com/
+- **Live API Docs:** https://ai-powered-customer-onboarding-agent.onrender.com/docs
 
 ## Endpoints
 
@@ -124,7 +126,8 @@ Upload a file for data validation and transformation.
 
 1. **Run unit tests:**
    ```bash
-   pytest tests/
+   cd app/tests
+   pytest test_file_upload.py
    ```
 
 2. **Test authentication and file uploads:**
@@ -141,6 +144,3 @@ Upload a file for data validation and transformation.
 - **Implement additional validation rules** for uploaded files.
 - **Add more comprehensive unit tests** for different file types and edge cases.
 - **Deploy the application** using Docker for better scalability and environment isolation.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
